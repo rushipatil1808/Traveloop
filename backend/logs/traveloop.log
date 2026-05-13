@@ -1,0 +1,7 @@
+2026-05-10 19:27:10 - traveloop - ERROR - Error generating itinerary: 2 validation errors for ItineraryResponse
+itinerary
+  Field required [type=missing, input_value={'destinations': ['Bali']....0, 'transport': 500.0}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+recommendations
+  Field required [type=missing, input_value={'destinations': ['Bali']....0, 'transport': 500.0}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
