@@ -25,6 +25,8 @@ router = APIRouter()
 def trip_for_response(trip: dict) -> dict:
     doc = clean_doc(trip)
     doc.setdefault("stops", [])
+    doc.setdefault("destinations", [])
+    doc.setdefault("ai_suggestions", [])
     return doc
 
 
@@ -33,6 +35,23 @@ def find_user_trip(trip_id: int, user_id: int) -> dict:
     if not trip:
         raise HTTPException(status_code=404, detail="Trip not found")
     return trip
+
+
+def stops_from_destinations(trip_id: int, destinations: list[str], start_date=None, end_date=None) -> list[dict]:
+    stops = []
+    for index, destination in enumerate(destinations):
+        stops.append({
+            "id": next_id("trip_stops"),
+            "trip_id": trip_id,
+            "city_name": destination,
+            "country": "Unknown",
+            "arrival_date": start_date,
+            "departure_date": end_date,
+            "order_index": index,
+            "itinerary_days": [],
+            "created_at": datetime.utcnow(),
+        })
+    return stops
 
 
 @router.get("/", response_model=List[TripList])
@@ -54,7 +73,11 @@ async def read_trips(
             "status": trip.get("status", "planning"),
             "total_budget": trip.get("total_budget"),
             "currency": trip.get("currency", "INR"),
+            "travel_style": trip.get("travel_style"),
+            "group_type": trip.get("group_type"),
+            "group_size": trip.get("group_size", 1),
             "cities": [stop["city_name"] for stop in trip.get("stops", [])],
+            "destinations": trip.get("destinations", []),
         })
     return result
 
@@ -73,6 +96,13 @@ async def create_trip(
         "created_at": now,
         "updated_at": now,
     })
+    if trip.destinations:
+        trip_doc["stops"] = stops_from_destinations(
+            trip_doc["id"],
+            trip.destinations,
+            trip_doc.get("start_date"),
+            trip_doc.get("end_date"),
+        )
     trips.insert_one(trip_doc)
 
     if trip.total_budget and trip.total_budget > 0:
@@ -81,6 +111,14 @@ async def create_trip(
         create_default_budgets(trip_doc["id"], float(trip.total_budget), trip.currency)
 
     return trip_for_response(trip_doc)
+
+
+@router.post("/create", response_model=Trip)
+async def create_trip_compat(
+    trip: TripCreate,
+    current_user: object = Depends(get_current_user),
+):
+    return await create_trip(trip, current_user)
 
 
 @router.get("/{trip_id}", response_model=Trip)
@@ -208,3 +246,52 @@ async def create_activity(
                 return activity_doc
 
     raise HTTPException(status_code=404, detail="Itinerary day not found")
+
+
+# ─── Stop Completion State endpoint ─────────────────────────────────────────
+
+@router.put("/{trip_id}/stops/{stop_id}/checklist")
+async def save_checklist(
+    trip_id: int,
+    stop_id: int,
+    body: dict,
+    current_user: object = Depends(get_current_user),
+):
+    """Save completion state for a city stop."""
+    trip = find_user_trip(trip_id, current_user.id)
+    completed = body.get("completed", False)
+
+    updated_stops = trip.get("stops", [])
+    for stop in updated_stops:
+        if stop["id"] == stop_id:
+            stop["city_completed"] = completed
+            break
+    trips.update_one(
+        {"id": trip_id, "user_id": current_user.id},
+        {"$set": {"stops": updated_stops, "updated_at": datetime.utcnow()}},
+    )
+    return {"message": "Stop status updated", "stop_id": stop_id}
+
+
+# ─── AI city recommendations per stop ──────────────────────────────────────
+
+@router.put("/{trip_id}/stops/{stop_id}/ai-recommendations")
+async def save_ai_recommendations(
+    trip_id: int,
+    stop_id: int,
+    body: dict,
+    current_user: object = Depends(get_current_user),
+):
+    """Persist AI-generated recommendations for a city stop."""
+    trip = find_user_trip(trip_id, current_user.id)
+    recommendations = body.get("recommendations", [])
+    updated_stops = trip.get("stops", [])
+    for stop in updated_stops:
+        if stop["id"] == stop_id:
+            stop["ai_recommendations"] = recommendations
+            break
+    trips.update_one(
+        {"id": trip_id, "user_id": current_user.id},
+        {"$set": {"stops": updated_stops, "updated_at": datetime.utcnow()}},
+    )
+    return {"message": "Recommendations saved"}

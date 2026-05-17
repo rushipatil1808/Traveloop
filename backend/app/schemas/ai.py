@@ -46,9 +46,10 @@ class ItineraryResponse(BaseModel):
 
 class BudgetPredictionRequest(BaseModel):
     destinations: List[str]
-    duration_days: int
+    duration_days: int = 1
     travel_style: Optional[str] = None
     group_size: int = 1
+    currency: str = "INR"
 
 
 class BudgetCategory(BaseModel):
@@ -71,12 +72,12 @@ class SearchRequest(BaseModel):
 
 class SearchResponse(BaseModel):
     destination: str
-    country: str
+    country: str = ""
     score: float
     reason: str
-    tags: List[str]
-    cost_index: str
-    avg_daily_cost: float
+    tags: List[str] = []
+    cost_index: str = ""
+    avg_daily_cost: float = 0.0
 
 
 class RecommendationsRequest(BaseModel):

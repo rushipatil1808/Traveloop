@@ -57,12 +57,22 @@ def budget_breakdown(trip_id: int) -> Dict[str, Any]:
     total_planned = sum(float(item.get("planned_amount", 0)) for item in categories)
     total_actual = sum(float(item.get("actual_amount", 0)) for item in categories)
     currency = categories[0].get("currency", "INR") if categories else "INR"
+    normalized_categories = [
+        {
+            **item,
+            "name": item.get("category"),
+            "planned": float(item.get("planned_amount", 0)),
+            "spent": float(item.get("actual_amount", 0)),
+        }
+        for item in categories
+    ]
     return {
         "total_planned": total_planned,
         "total_actual": total_actual,
+        "total_spent": total_actual,
         "remaining": total_planned - total_actual,
         "currency": currency,
-        "categories": categories,
+        "categories": normalized_categories,
     }
 
 

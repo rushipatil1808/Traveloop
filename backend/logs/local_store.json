@@ -1,0 +1,1068 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "email": "traveler@traveloop.ai",
+      "full_name": "Alex Traveler",
+      "password_hash": "",
+      "created_at": "2026-05-17T05:17:40.109228",
+      "updated_at": "2026-05-17T05:17:40.109232",
+      "is_active": true
+    },
+    {
+      "id": 2,
+      "email": "explorer@gmail.com",
+      "full_name": "explorer",
+      "google_id": "google_ZXhwbG9yZXJAZ21haWwuY29t",
+      "password_hash": "",
+      "created_at": "2026-05-17T05:25:28.023819",
+      "updated_at": "2026-05-17T09:27:00.539181",
+      "is_active": true
+    },
+    {
+      "id": 3,
+      "email": "rushipatil1808@gmail.com",
+      "full_name": "Rushikesh Patil",
+      "password_hash": "$pbkdf2-sha256$29000$bE3JWQuhNKa0NkZojZHyfg$42IZgKqQekT/EeqKtyX519FcBmnZFhpJYe3KVozD/No",
+      "created_at": "2026-05-17T05:29:57.457365",
+      "updated_at": "2026-05-17T05:29:57.457365",
+      "is_active": true
+    }
+  ],
+  "trips": [
+    {
+      "name": "IndiaTravel",
+      "description": "jdjdjd",
+      "start_date": "2026-05-21T00:00:00",
+      "end_date": "2026-05-30T00:00:00",
+      "status": "planning",
+      "total_budget": 4000.0,
+      "currency": "INR",
+      "travel_style": "budget",
+      "group_type": "family",
+      "group_size": 2,
+      "ai_suggestions": [
+        "\ud83d\ude8c Use public buses and local transport to save on travel in ahamdabad, Goa",
+        "\ud83c\udfe8 Book hostels or guesthouses for affordable accommodation",
+        "\ud83c\udf71 Eat at local dhabas and street stalls to save \u20b9300-500 per meal",
+        "\ud83c\udf9f\ufe0f Look for combo tickets and free entry days at major attractions"
+      ],
+      "destinations": [
+        "ahamdabad",
+        "Goa"
+      ],
+      "id": 1,
+      "user_id": 1,
+      "stops": [
+        {
+          "id": 1,
+          "trip_id": 1,
+          "city_name": "ahamdabad",
+          "country": "Unknown",
+          "arrival_date": "2026-05-21T00:00:00",
+          "departure_date": "2026-05-30T00:00:00",
+          "order_index": 0,
+          "itinerary_days": [],
+          "created_at": "2026-05-17T05:18:33.963855"
+        },
+        {
+          "id": 2,
+          "trip_id": 1,
+          "city_name": "Goa",
+          "country": "Unknown",
+          "arrival_date": "2026-05-21T00:00:00",
+          "departure_date": "2026-05-30T00:00:00",
+          "order_index": 1,
+          "itinerary_days": [],
+          "created_at": "2026-05-17T05:18:33.964680"
+        }
+      ],
+      "created_at": "2026-05-17T05:18:33.961228",
+      "updated_at": "2026-05-17T05:19:18.482903"
+    },
+    {
+      "name": "AbsTravel",
+      "description": "Mumbai to Jaipur\n",
+      "start_date": "2026-05-30T00:00:00",
+      "end_date": "2026-06-17T00:00:00",
+      "status": "planning",
+      "total_budget": 10000.0,
+      "currency": "INR",
+      "travel_style": "budget",
+      "group_type": "solo",
+      "group_size": 2,
+      "ai_suggestions": [
+        "\ud83d\ude8c Use public buses and local transport to save on travel in Jaipur, ahamdabad, Vadodra, Mumbai",
+        "\ud83c\udfe8 Book hostels or guesthouses for affordable accommodation",
+        "\ud83c\udf71 Eat at local dhabas and street stalls to save \u20b9300-500 per meal",
+        "\ud83c\udf9f\ufe0f Look for combo tickets and free entry days at major attractions"
+      ],
+      "destinations": [
+        "Jaipur",
+        "ahamdabad",
+        "Vadodra",
+        "Mumbai"
+      ],
+      "id": 2,
+      "user_id": 1,
+      "stops": [
+        {
+          "id": 3,
+          "trip_id": 2,
+          "city_name": "Jaipur",
+          "country": "Unknown",
+          "arrival_date": "2026-05-30T00:00:00",
+          "departure_date": "2026-06-17T00:00:00",
+          "order_index": 0,
+          "itinerary_days": [],
+          "created_at": "2026-05-17T05:20:43.552630"
+        },
+        {
+          "id": 4,
+          "trip_id": 2,
+          "city_name": "ahamdabad",
+          "country": "Unknown",
+          "arrival_date": "2026-05-30T00:00:00",
+          "departure_date": "2026-06-17T00:00:00",
+          "order_index": 1,
+          "itinerary_days": [],
+          "created_at": "2026-05-17T05:20:43.552955"
+        },
+        {
+          "id": 5,
+          "trip_id": 2,
+          "city_name": "Vadodra",
+          "country": "Unknown",
+          "arrival_date": "2026-05-30T00:00:00",
+          "departure_date": "2026-06-17T00:00:00",
+          "order_index": 2,
+          "itinerary_days": [],
+          "created_at": "2026-05-17T05:20:43.553270"
+        },
+        {
+          "id": 6,
+          "trip_id": 2,
+          "city_name": "Mumbai",
+          "country": "Unknown",
+          "arrival_date": "2026-05-30T00:00:00",
+          "departure_date": "2026-06-17T00:00:00",
+          "order_index": 3,
+          "itinerary_days": [],
+          "created_at": "2026-05-17T05:20:43.553621"
+        }
+      ],
+      "created_at": "2026-05-17T05:20:43.551694",
+      "updated_at": "2026-05-17T05:20:59.567904"
+    },
+    {
+      "name": "IndiaTravel",
+      "description": "Mumbai TO Goa",
+      "start_date": "2026-05-20T00:00:00",
+      "end_date": "2026-05-30T00:00:00",
+      "status": "planning",
+      "total_budget": 1000.0,
+      "currency": "INR",
+      "travel_style": "budget",
+      "group_type": "solo",
+      "group_size": 2,
+      "ai_suggestions": [
+        "\ud83d\ude8c Use public buses and local transport to save on travel in Mumbai, Ratnagiri, Raigadh, Goa",
+        "\ud83c\udfe8 Book hostels or guesthouses for affordable accommodation",
+        "\ud83c\udf71 Eat at local dhabas and street stalls to save \u20b9300-500 per meal",
+        "\ud83c\udf9f\ufe0f Look for combo tickets and free entry days at major attractions"
+      ],
+      "destinations": [
+        "Mumbai",
+        "Ratnagiri",
+        "Raigadh",
+        "Goa"
+      ],
+      "id": 3,
+      "user_id": 3,
+      "stops": [
+        {
+          "id": 7,
+          "trip_id": 3,
+          "city_name": "Mumbai",
+          "country": "Unknown",
+          "arrival_date": "2026-05-20T00:00:00",
+          "departure_date": "2026-05-30T00:00:00",
+          "order_index": 0,
+          "itinerary_days": [],
+          "created_at": "2026-05-17T05:31:29.228070",
+          "checklist_items": [],
+          "city_completed": true,
+          "ai_recommendations": [
+            "\ud83c\udfe8 Hotel: The Taj Mahal Palace (Colaba) - Approx \u20b98,000/night - Iconic heritage hotel with stunning views of the Gateway of India and Arabian Sea, offering luxury and historic charm.",
+            "\ud83c\udfe8 Hotel: Trident Bandra Kurla - Approx \u20b96,500/night - Modern luxury with excellent service, located near the airport and business districts, great for short stays.",
+            "\ud83d\uddfa\ufe0f Activity: Elephanta Caves - \u20b91200 (ferry + entry) - UNESCO World Heritage site with ancient rock-cut temples and breathtaking views of Mumbai\u2019s coastline.",
+            "\ud83d\uddfa\ufe0f Activity: Marine Drive - Free - Iconic sea-facing promenade perfect for sunset views, evening walks, and experiencing Mumbai\u2019s vibrant local life.",
+            "\ud83d\udca1 Tip: Use Mumbai\u2019s local trains for affordable and efficient travel, but avoid peak hours (8-10 AM, 5-7 PM) due to overcrowding. Opt for air-conditioned classes for comfort.",
+            "\ud83d\udca1 Tip: Carry small change for street vendors and local transport, as many places do not accept digital payments. Also, negotiate prices for taxis/auto-rickshaws before starting the journey."
+          ],
+          "direct_activities": [
+            {
+              "id": 3,
+              "name": "\ud83d\udcf8 Join a heritage walk to discover h...",
+              "time": "10:00",
+              "type": "sightseeing",
+              "cost": 0.0,
+              "duration": 60,
+              "category": "Sightseeing",
+              "notes": "\ud83d\udcf8 Join a heritage walk to discover hidden gems and local stories",
+              "completed": false,
+              "created_at": "2026-05-17T08:10:37.913233"
+            },
+            {
+              "id": 4,
+              "name": "\ud83c\udfdb\ufe0f Visit the historical monuments an...",
+              "time": "10:00",
+              "type": "sightseeing",
+              "cost": 0.0,
+              "duration": 60,
+              "category": "Sightseeing",
+              "notes": "\ud83c\udfdb\ufe0f Visit the historical monuments and heritage sites in Mumbai",
+              "completed": false,
+              "created_at": "2026-05-17T08:12:32.313144"
+            },
+            {
+              "id": 6,
+              "name": "\ud83c\udfe8 Hotel: The Taj Mahal Palace, Mumba...",
+              "time": "10:00",
+              "type": "sightseeing",
+              "cost": 0.0,
+              "duration": 60,
+              "category": "Sightseeing",
+              "notes": "\ud83c\udfe8 Hotel: The Taj Mahal Palace, Mumbai - \u20b915,000/night - Iconic luxury hotel with stunning views of the Gateway of India, perfect for a premium stay.",
+              "completed": false,
+              "created_at": "2026-05-17T08:44:48.032124"
+            },
+            {
+              "id": 7,
+              "name": "Gateway of India",
+              "time": "09:00",
+              "type": "sightseeing",
+              "cost": 300.0,
+              "duration": 50,
+              "category": "Adventure",
+              "notes": "",
+              "completed": false,
+              "created_at": "2026-05-17T08:48:08.533805"
+            },
+            {
+              "id": 8,
+              "name": "\ud83d\udca1 Tip: Visit the Gateway of India ea...",
+              "time": "10:00",
+              "type": "sightseeing",
+              "cost": 0.0,
+              "duration": 60,
+              "category": "Sightseeing",
+              "notes": "\ud83d\udca1 Tip: Visit the Gateway of India early in the morning to avoid crowds and enjoy a peaceful experience.",
+              "completed": false,
+              "created_at": "2026-05-17T08:48:39.009963"
+            },
+            {
+              "id": 9,
+              "name": "\ud83d\udca1 Tip: Visit the Gateway of India ea...",
+              "time": "10:00",
+              "type": "sightseeing",
+              "cost": 0.0,
+              "duration": 60,
+              "category": "Sightseeing",
+              "notes": "\ud83d\udca1 Tip: Visit the Gateway of India early in the morning to avoid crowds and enjoy a peaceful experience.",
+              "completed": false,
+              "created_at": "2026-05-17T08:48:43.046714"
+            },
+            {
+              "id": 10,
+              "name": "\ud83d\udca1 Tip: Visit the Gateway of India ea...",
+              "time": "10:00",
+              "type": "sightseeing",
+              "cost": 0.0,
+              "duration": 60,
+              "category": "Sightseeing",
+              "notes": "\ud83d\udca1 Tip: Visit the Gateway of India early in the morning to avoid crowds and enjoy a peaceful experience.",
+              "completed": false,
+              "created_at": "2026-05-17T08:48:45.135075"
+            },
+            {
+              "id": 11,
+              "name": "\ud83c\udfe8 Hotel: The Taj Mahal Palace - \u20b9800...",
+              "time": "10:00",
+              "type": "sightseeing",
+              "cost": 0.0,
+              "duration": 60,
+              "category": "Sightseeing",
+              "notes": "\ud83c\udfe8 Hotel: The Taj Mahal Palace - \u20b98000 (approx) - Iconic heritage hotel with stunning views of the Gateway of India, perfect for a luxurious stay.",
+              "completed": false,
+              "created_at": "2026-05-17T08:48:47.355903"
+            },
+            {
+              "id": 12,
+              "name": "\ud83c\udfe8 Hotel: The Taj Mahal Palace - \u20b9800...",
+              "time": "10:00",
+              "type": "sightseeing",
+              "cost": 0.0,
+              "duration": 60,
+              "category": "Sightseeing",
+              "notes": "\ud83c\udfe8 Hotel: The Taj Mahal Palace - \u20b98000 (approx) - Iconic heritage hotel with stunning views of the Gateway of India, perfect for a luxurious stay.",
+              "completed": false,
+              "created_at": "2026-05-17T08:48:48.143339"
+            },
+            {
+              "id": 13,
+              "name": "\ud83c\udfe8 Hotel: The Taj Mahal Palace - \u20b9800...",
+              "time": "10:00",
+              "type": "sightseeing",
+              "cost": 0.0,
+              "duration": 60,
+              "category": "Sightseeing",
+              "notes": "\ud83c\udfe8 Hotel: The Taj Mahal Palace - \u20b98000 (approx) - Iconic heritage hotel with stunning views of the Gateway of India, perfect for a luxurious stay.",
+              "completed": false,
+              "created_at": "2026-05-17T08:48:48.364610"
+            },
+            {
+              "id": 14,
+              "name": "Try Vada Pav",
+              "time": "15:00",
+              "type": "sightseeing",
+              "cost": 0.0,
+              "duration": 60,
+              "category": "Sightseeing",
+              "notes": "",
+              "completed": false,
+              "created_at": "2026-05-17T08:49:07.607606"
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "trip_id": 3,
+          "city_name": "Ratnagiri",
+          "country": "Unknown",
+          "arrival_date": "2026-05-20T00:00:00",
+          "departure_date": "2026-05-30T00:00:00",
+          "order_index": 1,
+          "itinerary_days": [],
+          "created_at": "2026-05-17T05:31:29.228550",
+          "ai_recommendations": [
+            "\ud83c\udfe8 Hotel: The Fern Ratnagiri - \u20b93500/night - Centrally located, offers modern amenities, and has a great view of the Arabian Sea.",
+            "\ud83c\udfe8 Hotel: Hotel Sea View - \u20b92500/night - Budget-friendly with sea-facing rooms and excellent service.",
+            "\ud83d\uddfa\ufe0f Activity: Ratnadurg Fort - \u20b9200 - A historic fort with panoramic views of the coast and rich history.",
+            "\ud83d\uddfa\ufe0f Activity: Thiba Palace - \u20b9150 - A lesser-known gem with colonial architecture and lush gardens.",
+            "\ud83d\uddfa\ufe0f Activity: Ganpatipule Beach - Free - Pristine beach with golden sand and clear waters, perfect for relaxation.",
+            "\ud83d\uddfa\ufe0f Activity: Swayambhu Ganesh Mandir - Free - A sacred temple dedicated to Lord Ganesha, known for its spiritual significance.",
+            "\ud83d\udca1 Tip: Visit local markets in the evening for fresh seafood and local snacks like 'Bombil' (Bombay Duck).",
+            "\ud83d\udca1 Tip: Rent a bike or car for the day to explore Ratnagiri and nearby attractions comfortably.",
+            "\ud83d\udca1 Tip: Carry light cotton clothes and a hat as Ratnagiri can get quite warm during the day."
+          ],
+          "checklist_items": [],
+          "city_completed": true
+        },
+        {
+          "id": 9,
+          "trip_id": 3,
+          "city_name": "Raigadh",
+          "country": "Unknown",
+          "arrival_date": "2026-05-20T00:00:00",
+          "departure_date": "2026-05-30T00:00:00",
+          "order_index": 2,
+          "itinerary_days": [],
+          "created_at": "2026-05-17T05:31:29.229197"
+        },
+        {
+          "id": 10,
+          "trip_id": 3,
+          "city_name": "Goa",
+          "country": "Unknown",
+          "arrival_date": "2026-05-20T00:00:00",
+          "departure_date": "2026-05-30T00:00:00",
+          "order_index": 3,
+          "itinerary_days": [],
+          "created_at": "2026-05-17T05:31:29.229905",
+          "checklist_items": [],
+          "city_completed": true
+        }
+      ],
+      "created_at": "2026-05-17T05:31:29.226978",
+      "updated_at": "2026-05-17T08:59:59.262941",
+      "share_token": "kU7f6iZN0KXT0zOjv4YwFqksCA6fftB50uMvFpnv_sc"
+    },
+    {
+      "name": "IndiaTravel",
+      "description": "dhd\n",
+      "start_date": "2026-05-29T00:00:00",
+      "end_date": "2026-06-06T00:00:00",
+      "status": "planning",
+      "total_budget": 3999.0,
+      "currency": "INR",
+      "travel_style": "cultural",
+      "group_type": "solo",
+      "group_size": 2,
+      "ai_suggestions": [],
+      "destinations": [
+        "ahamdabad",
+        "jaipur",
+        "vadodra"
+      ],
+      "id": 4,
+      "user_id": 3,
+      "stops": [
+        {
+          "id": 11,
+          "trip_id": 4,
+          "city_name": "ahamdabad",
+          "country": "Unknown",
+          "arrival_date": "2026-05-29T00:00:00",
+          "departure_date": "2026-06-06T00:00:00",
+          "order_index": 0,
+          "itinerary_days": [],
+          "created_at": "2026-05-17T06:37:39.821981",
+          "checklist_items": [
+            {
+              "id": 1779005352347,
+              "text": "Morning at ahamdabad",
+              "done": false
+            },
+            {
+              "id": 1779005352348,
+              "text": "Local Lunch Experience",
+              "done": false
+            },
+            {
+              "id": 1779005352349,
+              "text": "Evening Exploration",
+              "done": false
+            }
+          ],
+          "city_completed": false,
+          "ai_recommendations": [
+            "\ud83c\udfdb\ufe0f Visit the historical monuments and heritage sites in ahamdabad",
+            "\ud83c\udfad Attend a local cultural show or folk performance in the evening",
+            "\ud83d\uded5 Explore ancient temples, forts, and palaces at ahamdabad",
+            "\ud83d\udcf8 Join a heritage walk to discover hidden gems and local stories"
+          ],
+          "direct_activities": [
+            {
+              "id": 1,
+              "name": "\ud83c\udfdb\ufe0f Visit the historical monuments an...",
+              "time": "10:00",
+              "type": "sightseeing",
+              "cost": 0.0,
+              "duration": 60,
+              "category": "Sightseeing",
+              "notes": "\ud83c\udfdb\ufe0f Visit the historical monuments and heritage sites in ahamdabad",
+              "completed": false,
+              "created_at": "2026-05-17T08:08:57.938663"
+            },
+            {
+              "id": 2,
+              "name": "\ud83c\udfad Attend a local cultural show or fo...",
+              "time": "10:00",
+              "type": "sightseeing",
+              "cost": 0.0,
+              "duration": 60,
+              "category": "Sightseeing",
+              "notes": "\ud83c\udfad Attend a local cultural show or folk performance in the evening",
+              "completed": false,
+              "created_at": "2026-05-17T08:09:02.624601"
+            },
+            {
+              "id": 5,
+              "name": "\ud83d\udcf8 Join a heritage walk to discover h...",
+              "time": "10:00",
+              "type": "sightseeing",
+              "cost": 0.0,
+              "duration": 60,
+              "category": "Sightseeing",
+              "notes": "\ud83d\udcf8 Join a heritage walk to discover hidden gems and local stories",
+              "completed": false,
+              "created_at": "2026-05-17T08:13:45.381315"
+            }
+          ]
+        },
+        {
+          "id": 12,
+          "trip_id": 4,
+          "city_name": "jaipur",
+          "country": "Unknown",
+          "arrival_date": "2026-05-29T00:00:00",
+          "departure_date": "2026-06-06T00:00:00",
+          "order_index": 1,
+          "itinerary_days": [],
+          "created_at": "2026-05-17T06:37:39.822439",
+          "checklist_items": [],
+          "city_completed": true
+        },
+        {
+          "id": 13,
+          "trip_id": 4,
+          "city_name": "vadodra",
+          "country": "Unknown",
+          "arrival_date": "2026-05-29T00:00:00",
+          "departure_date": "2026-06-06T00:00:00",
+          "order_index": 2,
+          "itinerary_days": [],
+          "created_at": "2026-05-17T06:37:39.822887",
+          "ai_recommendations": [
+            "\ud83c\udfdb\ufe0f Visit the historical monuments and heritage sites in vadodra",
+            "\ud83c\udfad Attend a local cultural show or folk performance in the evening",
+            "\ud83d\uded5 Explore ancient temples, forts, and palaces at vadodra",
+            "\ud83d\udcf8 Join a heritage walk to discover hidden gems and local stories"
+          ]
+        }
+      ],
+      "created_at": "2026-05-17T06:37:39.820840",
+      "updated_at": "2026-05-17T09:08:49.540149"
+    },
+    {
+      "name": "Goa AI Escape",
+      "description": "AI-powered adventure to Goa. Tropical beach paradise with Portuguese heritage, vibrant nightlife, and water sports.",
+      "start_date": "2026-05-18T00:00:00",
+      "end_date": "2026-05-21T00:00:00",
+      "status": "planning",
+      "total_budget": 18000.0,
+      "currency": "INR",
+      "travel_style": "beach",
+      "group_type": "couple",
+      "group_size": 2,
+      "ai_suggestions": [
+        "\ud83c\udfe8 Hotel: Taj Exotica Resort & Spa - \u20b912,000/night - Luxury 5-star property with private beach access, infinity pools, and world-class spa.",
+        "\ud83c\udfe8 Hotel: Novotel Goa Resort & Spa - \u20b98,000/night - Family-friendly resort with direct beach access, kids' pool, and modern amenities.",
+        "\ud83d\uddfa\ufe0f Activity: Parasailing at Baga Beach - \u20b91,500 - Thrilling adventure with stunning aerial views of the coastline.",
+        "\ud83d\uddfa\ufe0f Activity: Spice Plantation Tour (Sahakari) - \u20b91,200 - Learn about Goan spices and enjoy a traditional Goan lunch.",
+        "\ud83d\udca1 Tip: Rent a scooter (\u20b9500/day) for flexible exploration of Goa\u2019s hidden beaches and local eateries.",
+        "\ud83d\udca1 Tip: Visit local markets (e.g., Anjuna Flea Market) in the evening for souvenirs, spices, and handmade crafts.",
+        "\ud83d\udca1 Tip: Carry reef-safe sunscreen to protect Goa\u2019s marine ecosystem while enjoying beach activities."
+      ],
+      "destinations": [
+        "Goa"
+      ],
+      "id": 6,
+      "user_id": 3,
+      "stops": [
+        {
+          "id": 15,
+          "trip_id": 6,
+          "city_name": "Goa",
+          "country": "Unknown",
+          "arrival_date": "2026-05-18T00:00:00",
+          "departure_date": "2026-05-21T00:00:00",
+          "order_index": 0,
+          "itinerary_days": [],
+          "created_at": "2026-05-17T09:14:35.875462"
+        }
+      ],
+      "created_at": "2026-05-17T09:14:35.870041",
+      "updated_at": "2026-05-17T09:14:43.634049"
+    },
+    {
+      "name": "Bali AI Escape",
+      "description": "AI-powered adventure to Bali. Island paradise with rice terraces, Hindu temples, surf beaches, and wellness retreats.",
+      "start_date": "2026-05-18T00:00:00",
+      "end_date": "2026-05-21T00:00:00",
+      "status": "planning",
+      "total_budget": 15000.0,
+      "currency": "INR",
+      "travel_style": "beach",
+      "group_type": "couple",
+      "group_size": 2,
+      "ai_suggestions": [
+        "\ud83c\udfe8 Hotel: The Slow (Canggu) - Approx 1,200,000 IDR/night - Boutique hotel with pool, close to beaches and vibrant nightlife.",
+        "\ud83c\udfe8 Hotel: Alaya Resort (Ubud) - Approx 1,500,000 IDR/night - Luxury jungle retreat with spa, near cultural sites.",
+        "\ud83c\udfe8 Hotel: The Ungasan (Uluwatu) - Approx 1,800,000 IDR/night - Cliffside resort with ocean views and infinity pool.",
+        "\ud83d\uddfa\ufe0f Activity: Snorkeling at Blue Lagoon (Padang Bai) - 250,000 IDR - Crystal-clear waters and vibrant marine life.",
+        "\ud83d\uddfa\ufe0f Activity: Waterfall Hopping in Munduk - 150,000 IDR - Visit Banyumala Twin Waterfalls and Gitgit Waterfall.",
+        "\ud83d\udca1 Tip: Rent a scooter (100,000 IDR/day) for flexible travel between beaches and attractions.",
+        "\ud83d\udca1 Tip: Bargain at local markets (e.g., Sukawati Art Market) for souvenirs and traditional crafts.",
+        "\ud83d\udca1 Tip: Visit beaches early morning to avoid crowds and enjoy the best sunrise views."
+      ],
+      "destinations": [
+        "Bali"
+      ],
+      "id": 7,
+      "user_id": 3,
+      "stops": [
+        {
+          "id": 16,
+          "trip_id": 7,
+          "city_name": "Bali",
+          "country": "Unknown",
+          "arrival_date": "2026-05-18T00:00:00",
+          "departure_date": "2026-05-21T00:00:00",
+          "order_index": 0,
+          "itinerary_days": [],
+          "created_at": "2026-05-17T09:18:32.674008",
+          "ai_recommendations": [
+            "\ud83c\udfe8 Hotel: The Kayon Resort - Approx Cost: 2500 - Luxury resort with stunning jungle views, infinity pools, and exceptional service.",
+            "\ud83d\uddfa\ufe0f Activity: Mount Batur Sunrise Trek - Ticket Cost: 300 - Offers breathtaking views of the sunrise over the island.",
+            "\ud83d\udca1 Tip: Rent a scooter for 70/day to explore Bali freely, but ensure you have an international driving permit.",
+            "\ud83d\uddfa\ufe0f Activity: Waterbom Bali - Ticket Cost: 400 - One of the best water parks in Asia, perfect for families and thrill-seekers.",
+            "\ud83d\udca1 Tip: Bargain at local markets like Ubud Art Market; prices are often inflated for tourists.",
+            "\ud83d\uddfa\ufe0f Activity: Uluwatu Temple - Ticket Cost: 50 - A stunning cliffside temple with traditional Kecak fire dance performances at sunset.",
+            "\ud83d\udca1 Tip: Visit temples with a sarong; most temples provide them for free but some may charge a small fee."
+          ]
+        }
+      ],
+      "created_at": "2026-05-17T09:18:32.667993",
+      "updated_at": "2026-05-17T09:18:56.366995"
+    }
+  ],
+  "budgets": [
+    {
+      "trip_id": 1,
+      "category": "Accommodation",
+      "id": 1,
+      "actual_amount": 0,
+      "currency": "INR",
+      "created_at": "2026-05-17T05:18:33.965204",
+      "planned_amount": 1600.0,
+      "updated_at": "2026-05-17T05:18:33.965204"
+    },
+    {
+      "trip_id": 1,
+      "category": "Food",
+      "id": 2,
+      "actual_amount": 0,
+      "currency": "INR",
+      "created_at": "2026-05-17T05:18:33.965204",
+      "planned_amount": 1000.0,
+      "updated_at": "2026-05-17T05:18:33.965204"
+    },
+    {
+      "trip_id": 1,
+      "category": "Transport",
+      "id": 3,
+      "actual_amount": 0,
+      "currency": "INR",
+      "created_at": "2026-05-17T05:18:33.965204",
+      "planned_amount": 800.0,
+      "updated_at": "2026-05-17T05:18:33.965204"
+    },
+    {
+      "trip_id": 1,
+      "category": "Activities",
+      "id": 4,
+      "actual_amount": 0,
+      "currency": "INR",
+      "created_at": "2026-05-17T05:18:33.965204",
+      "planned_amount": 400.0,
+      "updated_at": "2026-05-17T05:18:33.965204"
+    },
+    {
+      "trip_id": 1,
+      "category": "Miscellaneous",
+      "id": 5,
+      "actual_amount": 0,
+      "currency": "INR",
+      "created_at": "2026-05-17T05:18:33.965204",
+      "planned_amount": 200.0,
+      "updated_at": "2026-05-17T05:18:33.965204"
+    },
+    {
+      "trip_id": 2,
+      "category": "Accommodation",
+      "id": 6,
+      "actual_amount": 0,
+      "currency": "INR",
+      "created_at": "2026-05-17T05:20:43.554085",
+      "planned_amount": 4000.0,
+      "updated_at": "2026-05-17T05:20:43.554085"
+    },
+    {
+      "trip_id": 2,
+      "category": "Food",
+      "id": 7,
+      "actual_amount": 0,
+      "currency": "INR",
+      "created_at": "2026-05-17T05:20:43.554085",
+      "planned_amount": 2500.0,
+      "updated_at": "2026-05-17T05:20:43.554085"
+    },
+    {
+      "trip_id": 2,
+      "category": "Transport",
+      "id": 8,
+      "actual_amount": 0,
+      "currency": "INR",
+      "created_at": "2026-05-17T05:20:43.554085",
+      "planned_amount": 2000.0,
+      "updated_at": "2026-05-17T05:20:43.554085"
+    },
+    {
+      "trip_id": 2,
+      "category": "Activities",
+      "id": 9,
+      "actual_amount": 0,
+      "currency": "INR",
+      "created_at": "2026-05-17T05:20:43.554085",
+      "planned_amount": 1000.0,
+      "updated_at": "2026-05-17T05:20:43.554085"
+    },
+    {
+      "trip_id": 2,
+      "category": "Miscellaneous",
+      "id": 10,
+      "actual_amount": 0,
+      "currency": "INR",
+      "created_at": "2026-05-17T05:20:43.554085",
+      "planned_amount": 500.0,
+      "updated_at": "2026-05-17T05:20:43.554085"
+    },
+    {
+      "trip_id": 3,
+      "category": "Accommodation",
+      "id": 11,
+      "actual_amount": 0,
+      "currency": "INR",
+      "created_at": "2026-05-17T05:31:29.230558",
+      "planned_amount": 400.0,
+      "updated_at": "2026-05-17T05:31:29.230558"
+    },
+    {
+      "trip_id": 3,
+      "category": "Food",
+      "id": 12,
+      "actual_amount": 0,
+      "currency": "INR",
+      "created_at": "2026-05-17T05:31:29.230558",
+      "planned_amount": 250.0,
+      "updated_at": "2026-05-17T05:31:29.230558"
+    },
+    {
+      "trip_id": 3,
+      "category": "Transport",
+      "id": 13,
+      "actual_amount": 0,
+      "currency": "INR",
+      "created_at": "2026-05-17T05:31:29.230558",
+      "planned_amount": 200.0,
+      "updated_at": "2026-05-17T05:31:29.230558"
+    },
+    {
+      "trip_id": 3,
+      "category": "Activities",
+      "id": 14,
+      "actual_amount": 0,
+      "currency": "INR",
+      "created_at": "2026-05-17T05:31:29.230558",
+      "planned_amount": 100.0,
+      "updated_at": "2026-05-17T05:31:29.230558"
+    },
+    {
+      "trip_id": 3,
+      "category": "Miscellaneous",
+      "id": 15,
+      "actual_amount": 0,
+      "currency": "INR",
+      "created_at": "2026-05-17T05:31:29.230558",
+      "planned_amount": 50.0,
+      "updated_at": "2026-05-17T05:31:29.230558"
+    },
+    {
+      "trip_id": 4,
+      "category": "Accommodation",
+      "id": 16,
+      "actual_amount": 0,
+      "currency": "INR",
+      "created_at": "2026-05-17T06:37:39.823406",
+      "planned_amount": 1599.6,
+      "updated_at": "2026-05-17T06:37:39.823406"
+    },
+    {
+      "trip_id": 4,
+      "category": "Food",
+      "id": 17,
+      "actual_amount": 0,
+      "currency": "INR",
+      "created_at": "2026-05-17T06:37:39.823406",
+      "planned_amount": 999.75,
+      "updated_at": "2026-05-17T06:37:39.823406"
+    },
+    {
+      "trip_id": 4,
+      "category": "Transport",
+      "id": 18,
+      "actual_amount": 0,
+      "currency": "INR",
+      "created_at": "2026-05-17T06:37:39.823406",
+      "planned_amount": 799.8,
+      "updated_at": "2026-05-17T06:37:39.823406"
+    },
+    {
+      "trip_id": 4,
+      "category": "Activities",
+      "id": 19,
+      "actual_amount": 0,
+      "currency": "INR",
+      "created_at": "2026-05-17T06:37:39.823406",
+      "planned_amount": 399.9,
+      "updated_at": "2026-05-17T06:37:39.823406"
+    },
+    {
+      "trip_id": 4,
+      "category": "Miscellaneous",
+      "id": 20,
+      "actual_amount": 0,
+      "currency": "INR",
+      "created_at": "2026-05-17T06:37:39.823406",
+      "planned_amount": 199.95,
+      "updated_at": "2026-05-17T06:37:39.823406"
+    },
+    {
+      "trip_id": 5,
+      "category": "Accommodation",
+      "id": 21,
+      "actual_amount": 0,
+      "currency": "INR",
+      "created_at": "2026-05-17T09:13:40.503959",
+      "planned_amount": 21600.0,
+      "updated_at": "2026-05-17T09:13:40.503959"
+    },
+    {
+      "trip_id": 5,
+      "category": "Food",
+      "id": 22,
+      "actual_amount": 0,
+      "currency": "INR",
+      "created_at": "2026-05-17T09:13:40.503959",
+      "planned_amount": 13500.0,
+      "updated_at": "2026-05-17T09:13:40.503959"
+    },
+    {
+      "trip_id": 5,
+      "category": "Transport",
+      "id": 23,
+      "actual_amount": 0,
+      "currency": "INR",
+      "created_at": "2026-05-17T09:13:40.503959",
+      "planned_amount": 10800.0,
+      "updated_at": "2026-05-17T09:13:40.503959"
+    },
+    {
+      "trip_id": 5,
+      "category": "Activities",
+      "id": 24,
+      "actual_amount": 0,
+      "currency": "INR",
+      "created_at": "2026-05-17T09:13:40.503959",
+      "planned_amount": 5400.0,
+      "updated_at": "2026-05-17T09:13:40.503959"
+    },
+    {
+      "trip_id": 5,
+      "category": "Miscellaneous",
+      "id": 25,
+      "actual_amount": 0,
+      "currency": "INR",
+      "created_at": "2026-05-17T09:13:40.503959",
+      "planned_amount": 2700.0,
+      "updated_at": "2026-05-17T09:13:40.503959"
+    },
+    {
+      "trip_id": 6,
+      "category": "Accommodation",
+      "id": 26,
+      "actual_amount": 0,
+      "currency": "INR",
+      "created_at": "2026-05-17T09:14:35.877412",
+      "planned_amount": 7200.0,
+      "updated_at": "2026-05-17T09:14:35.877412"
+    },
+    {
+      "trip_id": 6,
+      "category": "Food",
+      "id": 27,
+      "actual_amount": 0,
+      "currency": "INR",
+      "created_at": "2026-05-17T09:14:35.877412",
+      "planned_amount": 4500.0,
+      "updated_at": "2026-05-17T09:14:35.877412"
+    },
+    {
+      "trip_id": 6,
+      "category": "Transport",
+      "id": 28,
+      "actual_amount": 0,
+      "currency": "INR",
+      "created_at": "2026-05-17T09:14:35.877412",
+      "planned_amount": 3600.0,
+      "updated_at": "2026-05-17T09:14:35.877412"
+    },
+    {
+      "trip_id": 6,
+      "category": "Activities",
+      "id": 29,
+      "actual_amount": 0,
+      "currency": "INR",
+      "created_at": "2026-05-17T09:14:35.877412",
+      "planned_amount": 1800.0,
+      "updated_at": "2026-05-17T09:14:35.877412"
+    },
+    {
+      "trip_id": 6,
+      "category": "Miscellaneous",
+      "id": 30,
+      "actual_amount": 0,
+      "currency": "INR",
+      "created_at": "2026-05-17T09:14:35.877412",
+      "planned_amount": 900.0,
+      "updated_at": "2026-05-17T09:14:35.877412"
+    },
+    {
+      "trip_id": 7,
+      "category": "Accommodation",
+      "id": 31,
+      "actual_amount": 0,
+      "currency": "INR",
+      "created_at": "2026-05-17T09:18:32.676544",
+      "planned_amount": 6000.0,
+      "updated_at": "2026-05-17T09:18:32.676544"
+    },
+    {
+      "trip_id": 7,
+      "category": "Food",
+      "id": 32,
+      "actual_amount": 0,
+      "currency": "INR",
+      "created_at": "2026-05-17T09:18:32.676544",
+      "planned_amount": 3750.0,
+      "updated_at": "2026-05-17T09:18:32.676544"
+    },
+    {
+      "trip_id": 7,
+      "category": "Transport",
+      "id": 33,
+      "actual_amount": 0,
+      "currency": "INR",
+      "created_at": "2026-05-17T09:18:32.676544",
+      "planned_amount": 3000.0,
+      "updated_at": "2026-05-17T09:18:32.676544"
+    },
+    {
+      "trip_id": 7,
+      "category": "Activities",
+      "id": 34,
+      "actual_amount": 0,
+      "currency": "INR",
+      "created_at": "2026-05-17T09:18:32.676544",
+      "planned_amount": 1500.0,
+      "updated_at": "2026-05-17T09:18:32.676544"
+    },
+    {
+      "trip_id": 7,
+      "category": "Miscellaneous",
+      "id": 35,
+      "actual_amount": 0,
+      "currency": "INR",
+      "created_at": "2026-05-17T09:18:32.676544",
+      "planned_amount": 750.0,
+      "updated_at": "2026-05-17T09:18:32.676544"
+    }
+  ],
+  "chatbot_history": [
+    {
+      "id": 1,
+      "user_id": 3,
+      "session_id": "session_1778995808734",
+      "trip_id": null,
+      "user_message": "Plan a 7-day itinerary for Bali",
+      "ai_response": "Here\u2019s a well-balanced **7-day Bali itinerary** that covers cultural highlights, adventure, relaxation, and hidden gems. Adjust based on your interests (e.g., more beach time, hiking, or luxury).\n\n---\n\n### **Day 1: Arrival in Seminyak/Canggu**\n**Theme:** *First impressions & beach vibes*\n- **Morning:** Arrive in **Bali (Denpasar Airport, DPS)**. Transfer to your hotel in **Seminyak** or **Canggu** (30\u201345 mins by car).\n- **Afternoon:** Relax at **Seminyak Beach** or **Echo Beach (Canggu)**. Enjoy a sunset cocktail at **La Brisa** (Canggu) or **Potato Head Beach Club** (Seminyak).\n- **Evening:** Dinner at **Merah Putih** (Indonesian fine dining) or **Mason** (Canggu\u2019s hipster spot).\n- **Stay:** Luxury: *The Legian* (Seminyak) or *The Slow* (Canggu). Budget: *Puri Garden* (Seminyak) or *Kosone Hostel* (Canggu).\n\n---\n\n### **Day 2: Ubud \u2013 Culture & Nature**\n**Theme:** *Jungle, temples, and art*\n- **Morning:** Drive to **Ubud** (1.5\u20132 hours). Stop at **Tirta Empul Temple** (holy water purification ritual) or **Goa Gajah** (ancient elephant cave).\n- **Afternoon:**\n  - Explore **Sacred Monkey Forest** (watch out for mischievous monkeys!).\n  - Lunch at **Locavore** (fine dining) or **Zest Ubud** (vegan).\n  - Visit **Tegalalang Rice Terraces** (iconic swings) or **Campuhan Ridge Walk** (scenic hike).\n- **Evening:** **Balinese dance performance** at **Ubud Palace** (6pm) or **Arma Museum**.\n- **Stay:** *Four Seasons Resort Bali at Sayan* (luxury) or *Puri Garden* (mid-range).\n\n---\n\n### **Day 3: Central Bali \u2013 Waterfalls & Volcano**\n**Theme:** *Adventure & panoramic views*\n- **Morning:**",
+      "created_at": "2026-05-17T05:30:16.823106"
+    },
+    {
+      "id": 2,
+      "user_id": 3,
+      "session_id": "session_1778996677055",
+      "trip_id": null,
+      "user_message": "plan trip mumbai  to Goa",
+      "ai_response": "Here\u2019s a well-structured plan for your trip from **Mumbai to Goa**, covering transportation, accommodation, activities, and budget considerations:\n\n---\n\n### **1. Transportation Options**\n#### **By Air (Fastest, ~1.5 hrs)**\n- **Airlines**: IndiGo, GoAir, Vistara, SpiceJet.\n- **Airports**:\n  - Mumbai (BOM) \u2192 Goa (GOI \u2013 Dabolim or GOA \u2013 Mopa).\n  - Mopa Airport is newer (1.5 hrs from Panaji) but has fewer flights.\n- **Cost**: \u20b92,500\u2013\u20b96,000 (one-way, depending on season).\n- **Tips**: Book in advance (prices rise during peak seasons like Christmas/New Year).\n\n#### **By Train (Scenic, ~10\u201314 hrs)**\n- **Trains**: Goa Sampark Kranti (e.g., Mumbai CSMT \u2192 Madgaon), Konkan Kanya Express.\n- **Classes**: 2AC/3AC (book via IRCTC or apps like RailYatri).\n- **Cost**: \u20b9500\u2013\u20b92,000 (3AC is ~\u20b91,200).\n- **Tips**: Opt for overnight trains to save time.\n\n#### **By Road (Flexible, ~10\u201312 hrs)**\n- **Route**: Mumbai \u2192 Panvel \u2192 Mahad \u2192 Khed \u2192 Goa (via NH66).\n- **Options**:\n  - **Self-drive**: Rent a car (\u20b93,000\u2013\u20b95,000/day) or use your own vehicle.\n  - **Bus**: State-run (MSRTC, Konkan Travels) or private (\u20b91,000\u2013\u20b92,500).\n- **Tips**: Stop in **Alibaug** or **Mahabaleshwar** for breaks.\n\n---\n\n### **2. Accommodation**\n#### **Budget (\u20b9800\u2013\u20b92,500/night)**\n- Hostels: Goa Backpackers, Zostel.\n- Homestays: Airbnb in Palolem, Arpora.\n\n#### **Mid-Range (\u20b92,500\u2013\u20b96,000/night)**\n- Beachfront hotels: Taj Exotica",
+      "created_at": "2026-05-17T05:44:53.162741"
+    },
+    {
+      "id": 3,
+      "user_id": 3,
+      "session_id": "session_1778998182534",
+      "trip_id": null,
+      "user_message": "How to get a visa for Japan?",
+      "ai_response": "### **How to Get a Visa for Japan**\n\nJapan offers different types of visas depending on your purpose of travel (tourism, work, study, etc.). Below is a general guide for obtaining a **tourist visa (short-term stay)**, which is the most common for visitors.\n\n---\n\n## **\ud83d\udd39 Step-by-Step Guide to Getting a Japan Visa**\n\n### **1\ufe0f\u20e3 Determine the Type of Visa You Need**\nJapan has several visa categories. The most common ones include:\n- **Tourist Visa (Short-term stay)** \u2013 For tourism, visiting friends/family, or short business trips (up to 90 days).\n  - **Visa-free entry**: Citizens of **68 countries** (e.g., USA, UK, Canada, Australia, Germany, France) can enter Japan **without a visa for up to 90 days** (check [Japan MOFA](https://www.mofa.go.jp/) for your country\u2019s eligibility).\n  - **Visa required**: If your country is **not** on the visa-exempt list, you must apply for a tourist visa.\n\n- **Work Visa** \u2013 For employment (e.g., Engineer, Instructor, Business Manager).\n- **Student Visa** \u2013 For long-term study in Japan.\n- **Spouse/Dependent Visa** \u2013 For family reunification.\n- **Other visas** \u2013 Investor, Highly Skilled Professional, etc.\n\n\ud83d\udccc **Check your eligibility**: [Japan Visa Requirements by Country](https://www.mofa.go.jp/j_info/visit/visa/)\n\n---\n\n### **2\ufe0f\u20e3 Check Visa Requirements**\nIf you **need a visa**, prepare the following documents (varies slightly by country):\n\n#### **\ud83d\udccb Required Documents for a Tourist Visa**\n\u2705 **Passport** \u2013 Must be valid for at least **6 months** beyond your stay.\n\u2705 **Visa Application Form** \u2013 Fill out the official form (download from [Japan MOFA](https://www.mofa.go.jp/)).\n\u2705 **Passport-sized Photo** \u2013 **4.5 cm \u00d7 4.5 cm**, white background, taken within **6 months**.\n\u2705 **Proof of Financial Means** \u2013 Bank statements (last 3-6 months), employment certificate, or sponsorship letter.\n\u2705 **Flight Itinerary** \u2013 A **",
+      "created_at": "2026-05-17T06:09:48.312544"
+    },
+    {
+      "id": 4,
+      "user_id": 3,
+      "session_id": "session_1779004442829",
+      "trip_id": null,
+      "user_message": "plan trip mumbai to pune",
+      "ai_response": "Here\u2019s a well-structured plan for your **Mumbai to Pune trip**, covering travel options, key stops, and essential tips:\n\n---\n\n### **1. Travel Options (Distance: ~150 km)**\n#### **A. By Train (Fastest & Cheapest)**\n- **Trains**: Mumbai to Pune local trains (e.g., **Shatabdi Express**, **Deccan Queen**, or **Intercity**) take **3\u20134 hours**.\n  - **Departure**: Mumbai (CST/Chhatrapati Shivaji Maharaj Terminus) or Dadar.\n  - **Arrival**: Pune Junction.\n  - **Cost**: \u20b9100\u2013\u20b9500 (depending on class).\n  - **Booking**: [IRCTC website/app](https://www.irctc.co.in/) or at stations.\n\n#### **B. By Road (Flexible)**\n- **Car/Taxi**: ~3 hours via **Mumbai-Pune Expressway** (toll roads: ~\u20b9500\u2013\u20b9800).\n  - **Rental**: Ola, Uber, or local taxis (\u20b92,500\u2013\u20b94,000 one-way).\n- **Bus**: State-run (MSRTC) or private buses (\u20b9200\u2013\u20b9600, 4\u20135 hours).\n  - **Departures**: Mumbai (Swargate/Kalyan) or Navi Mumbai (Vashi).\n\n#### **C. By Flight (Least Practical)**\n- **Helicopter**: Book a **helicopter ride** (\u20b95,000\u2013\u20b910,000, 30 mins) via **Pawan Hans** or **Helitrans**.\n  - **Departure**: Juhu Airport (Mumbai) \u2192 Pune Airport.\n  - *Note*: Limited availability; weather-dependent.\n\n---\n\n### **2. Must-Visit Stops (If Driving)**\n- **Lonavala/Khandala**: Hill station with waterfalls (e.g., **Rajmachi Point**, **Tiger\u2019s Leap**).\n- **Pawna Lake**: Scenic spot for boating/camping (~30 mins detour).\n- **Shivneri Fort**: Birthplace of Chhatrapati Shivaji (45 mins from P",
+      "created_at": "2026-05-17T07:54:27.966732"
+    },
+    {
+      "id": 5,
+      "user_id": 3,
+      "session_id": "session_1779008809195",
+      "trip_id": null,
+      "user_message": "Boutique hotels in Goa with sea views",
+      "ai_response": "Here are some **boutique hotels in Goa with sea views** that offer a unique, intimate, and stylish stay:\n\n### **North Goa (More Lively & Touristy)**\n1. **Casa de Goa** (Bogmalo) \u2013 A boutique heritage hotel with **sea-facing rooms**, Portuguese architecture, and a relaxed vibe.\n2. **The Leela Goa** (Cavelossim) \u2013 Luxury boutique-style resort with **private beach access** and stunning ocean views.\n3. **Alila Diwa Goa** (Majorda) \u2013 Modernist boutique hotel with **panoramic sea views**, infinity pools, and a tranquil setting.\n4. **Taj Exotica Resort & Spa** (Benaulim) \u2013 A refined boutique-style retreat with **direct beach access** and lush gardens.\n5. **W Goa** (Vagator) \u2013 Trendy boutique hotel with **cliffside sea views**, a vibrant nightlife scene, and stylish decor.\n\n### **South Goa (More Serene & Scenic)**\n6. **The Kenilworth** (Cavelossim) \u2013 A boutique heritage hotel with **private beach access** and colonial charm.\n7. **The Zuri White Sands, Goa Resort & Spa** (Arossim) \u2013 Eco-friendly boutique resort with **sea-facing cottages** and Ayurvedic spa.\n8. **Cavelossim Beach Resort** (Cavelossim) \u2013 Boutique-style property with **direct beachfront** and Goa\u2019s best beaches nearby.\n9. **Casa Palms** (Palolem) \u2013 A small, intimate boutique hotel with **sea views**, hammocks, and a bohemian vibe.\n10. **Nilaya Hermitage** (Agonda) \u2013 A **cliffside boutique stay** with **stunning ocean views**, yoga retreats, and seclusion.\n\n### **Budget-Friendly Boutique Stays**\n- **The Postcard Velha** (Old Goa) \u2013 Boutique heritage hotel with **river views** (not sea but charming).\n- **Bogmallo Beach Resort** (Bogmalo) \u2013 Affordable boutique-style stay with **sea views**.\n- **Hilltop Holiday Homes** (Vagator) \u2013 Small boutique guesthouses with **cliffside views**.\n\n### **Best for Romantic Getaways**\n- **Casa de Goa** (B",
+      "created_at": "2026-05-17T09:07:09.512360"
+    },
+    {
+      "id": 6,
+      "user_id": 3,
+      "session_id": "session_1779008844382",
+      "trip_id": null,
+      "user_message": "Help me plan my travel dates",
+      "ai_response": "That sounds like a great plan! To help you choose the best travel dates, I\u2019d love to know a few details:\n\n1. **Destination** \u2013 Where are you planning to go? (This can affect weather, peak seasons, and flight prices.)\n2. **Duration** \u2013 How long do you want to travel for?\n3. **Budget** \u2013 Are you looking for budget-friendly options or luxury experiences?\n4. **Interests** \u2013 What activities do you want to do? (Beach relaxation, hiking, festivals, etc.)\n5. **Flexibility** \u2013 Are your dates fixed, or can you adjust them for better deals or weather?\n\nOnce I have these details, I can suggest optimal travel dates or even help you find the best time to book flights/hotels! \ud83d\ude0a\n\nWould you like help with a specific destination?",
+      "created_at": "2026-05-17T09:07:30.642950"
+    },
+    {
+      "id": 7,
+      "user_id": 3,
+      "session_id": "session_1779008844382",
+      "trip_id": null,
+      "user_message": "goa",
+      "ai_response": "That sounds like a fantastic trip! **Goa** is a great destination with beautiful beaches, vibrant nightlife, delicious seafood, and a mix of Portuguese and Indian culture. To help you plan your travel dates, I\u2019ll need a bit more info:\n\n### **Key Factors for Goa Travel Dates:**\n1. **Weather (Best Time to Visit):**\n   - **Peak Season (Nov\u2013Feb):** Cool & pleasant (20\u201330\u00b0C), ideal for beach activities, parties, and sightseeing. *Most popular & expensive.*\n   - **Shoulder Season (Mar\u2013May):** Hot (30\u201338\u00b0C), great for water sports & budget travelers. Fewer crowds.\n   - **Monsoon (Jun\u2013Sep):** Lush greenery, fewer tourists, heavy rains. *Cheapest but not ideal for beaches.*\n   - **Oct:** Transition month\u2014still warm but starting to cool down.\n\n2. **Budget Considerations:**\n   - **Peak Season (Nov\u2013Feb):** High hotel/flight prices, crowded beaches.\n   - **Shoulder Season (Mar\u2013May):** Lower prices, fewer crowds.\n   - **Monsoon (Jun\u2013Sep):** Cheapest rates, but limited activities.\n\n3. **Events & Festivals in Goa:**\n   - **Christmas & New Year (Dec 25\u2013Jan 1):** *Most expensive & crowded.* Book early!\n   - **Sunburn Festival (Dec 28\u201330):** Major electronic music festival.\n   - **Shigmo Festival (Mar):** Colorful Goan cultural festival.\n   - **Christmas & Carnival (Feb):** Festive vibes with parades and parties.\n\n4. **Crowds & Availability:**\n   - **Dec\u2013Jan:** Book flights & hotels **3\u20136 months in advance** for the best deals.\n   - **Jun\u2013Sep:** Easier to find last-minute stays, but some shacks/hotels may close.\n\n### **Best Time to Visit Goa?**\n| **Priority** | **Best Months** | **Why?** |\n|-------------|----------------|----------|\n| **Beach & Party** | **Dec\u2013Feb** | Perfect weather, full moon parties (Anjuna), Christmas/New Year vibes. |\n| **Budget Travel** | **Apr\u2013May, Sep\u2013Oct** | Cheaper, fewer crowds, still warm. |\n| **Cultural &",
+      "created_at": "2026-05-17T09:07:53.502978"
+    },
+    {
+      "id": 8,
+      "user_id": 3,
+      "session_id": "session_1779008844382",
+      "trip_id": null,
+      "user_message": "Show my recent searches and history",
+      "ai_response": "I don\u2019t have access to your personal search history or recent searches\u2014my responses are based on the information you share with me in our conversation. If you'd like help planning your Goa trip, here\u2019s a quick recap of key details I can assist with:\n\n### **Goa Travel Planning Summary**\n\u2705 **Best Time to Visit:**\n- **Peak (Nov\u2013Feb):** Ideal for beaches, parties, and festivals (but pricier).\n- **Shoulder (Mar\u2013May, Sep\u2013Oct):** Budget-friendly with good weather.\n- **Monsoon (Jun\u2013Sep):** Cheapest, but heavy rains limit outdoor activities.\n\n\u2705 **Budget Tips:**\n- Book flights/hotels **3\u20136 months early** for peak season.\n- Consider **North Goa** (Anjuna, Vagator, Baga) for nightlife.\n- **South Goa** (Palolem, Agonda) for quiet beaches.\n\n\u2705 **Must-Do Activities:**\n- Explore **Old Goa** (Basilica of Bom Jesus, S\u00e9 Cathedral).\n- Try **Goan seafood** (fish curry rice, bebinca).\n- Visit **Spice Plantations** or **Dudhsagar Falls** (check monsoon access).\n\nWould you like recommendations on:\n- **Flights/hotels** (best deals for your dates)?\n- **Itinerary** (3-day, 5-day, etc.)?\n- **Hidden gems** (less touristy spots)?",
+      "created_at": "2026-05-17T09:08:23.625748"
+    }
+  ],
+  "counters": [
+    {
+      "_id": "users",
+      "seq": 3
+    },
+    {
+      "_id": "trips",
+      "seq": 7
+    },
+    {
+      "_id": "trip_stops",
+      "seq": 16
+    },
+    {
+      "_id": "budgets",
+      "seq": 35
+    },
+    {
+      "_id": "chatbot_history",
+      "seq": 8
+    },
+    {
+      "_id": "expenses",
+      "seq": 1
+    },
+    {
+      "_id": "activities",
+      "seq": 14
+    }
+  ],
+  "expenses": []
+}

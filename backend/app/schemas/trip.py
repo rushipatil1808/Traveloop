@@ -39,6 +39,8 @@ class TripBase(BaseModel):
     travel_style: Optional[str] = None
     group_type: Optional[str] = None
     group_size: int = 1
+    ai_suggestions: List[str] = []
+    destinations: List[str] = []
 
 
 class TripCreate(TripBase):
@@ -56,6 +58,8 @@ class TripUpdate(BaseModel):
     travel_style: Optional[str] = None
     group_type: Optional[str] = None
     group_size: Optional[int] = None
+    ai_suggestions: Optional[List[str]] = None
+    destinations: Optional[List[str]] = None
 
 
 class TripStopBase(BaseModel):
@@ -143,6 +147,8 @@ class TripStop(TripStopBase):
     id: int
     trip_id: int
     itinerary_days: List[ItineraryDay] = []
+    city_completed: bool = False
+    ai_recommendations: List[str] = []
     created_at: datetime
 
     class Config:
@@ -168,7 +174,11 @@ class TripList(BaseModel):
     status: TripStatus
     total_budget: Optional[float]
     currency: str
+    travel_style: Optional[str] = None
+    group_type: Optional[str] = None
+    group_size: int = 1
     cities: List[str] = []
+    destinations: List[str] = []
 
     class Config:
-        from_attributes = True
+        from_attributes = True

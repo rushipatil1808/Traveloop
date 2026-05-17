@@ -44,6 +44,8 @@ class Settings(BaseSettings):
     MISTRAL_API_KEY: Optional[str] = None
     MISTRAL_MODEL: str = "mistral-small"
     MISTRAL_API_URL: str = "https://api.mistral.ai/v1/chat/completions"
+    OLLAMA_MODEL: str = "deepseek-coder"
+    OLLAMA_API_URL: str = "http://localhost:11434/api/generate"
     AI_PROVIDER: str = "anthropic"
     ENABLE_RAG: bool = False
     

@@ -32,6 +32,14 @@ async def generate_itinerary(
         raise HTTPException(status_code=500, detail=f"AI service error: {str(e)}")
 
 
+@router.post("/generate", response_model=ItineraryResponse)
+async def generate_itinerary_compat(
+    request: ItineraryRequest,
+    current_user: object = Depends(get_current_user),
+):
+    return await generate_itinerary(request, current_user)
+
+
 @router.post("/predict-budget", response_model=BudgetPredictionResponse)
 async def predict_budget(
     request: BudgetPredictionRequest,

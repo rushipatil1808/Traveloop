@@ -32,8 +32,10 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-# Include API routes
+# Include API routes. /api/v1 is the canonical frontend path; /api is kept for
+# compatibility with older AI-generated code and requested integration tests.
 app.include_router(api_router, prefix=settings.API_V1_STR)
+app.include_router(api_router, prefix="/api")
 
 
 @app.on_event("startup")
