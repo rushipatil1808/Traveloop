@@ -3,9 +3,9 @@ echo =========================================
 echo   Traveloop - Fast Start
 echo =========================================
 
-echo [0/2] Stopping any existing servers...
-taskkill /F /FI "WINDOWTITLE eq Traveloop Backend" >nul 2>&1
-taskkill /F /FI "WINDOWTITLE eq Traveloop Frontend" >nul 2>&1
+echo [0/2] Stopping any existing servers on port 8000 and 3000...
+for /f "tokens=5" %%a in ('netstat -aon ^| findstr :8000 ^| findstr LISTENING') do taskkill /F /PID %%a >nul 2>&1
+for /f "tokens=5" %%a in ('netstat -aon ^| findstr :3000 ^| findstr LISTENING') do taskkill /F /PID %%a >nul 2>&1
 
 echo [1/2] Starting Backend  (http://localhost:8000)...
 start "Traveloop Backend" cmd /k "cd /d e:\Traveloop\backend && venv\Scripts\python.exe -m uvicorn app.main:app --reload --host 127.0.0.1 --port 8000"

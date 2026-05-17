@@ -214,6 +214,8 @@ if using_local_store:
     chatbot_history = local_store.collection("chatbot_history")
     counters = local_store.collection("counters")
     expenses = local_store.collection("expenses")
+    settlements = local_store.collection("settlements")
+    tripmembers = local_store.collection("tripmembers")
 else:
     users = db["users"]
     trips = db["trips"]
@@ -221,6 +223,8 @@ else:
     chatbot_history = db["chatbot_history"]
     counters = db["counters"]
     expenses = db["expenses"]
+    settlements = db["settlements"]
+    tripmembers = db["tripmembers"]
 
 
 def init_db() -> None:

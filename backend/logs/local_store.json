@@ -368,7 +368,8 @@
           "departure_date": "2026-05-30T00:00:00",
           "order_index": 2,
           "itinerary_days": [],
-          "created_at": "2026-05-17T05:31:29.229197"
+          "created_at": "2026-05-17T05:31:29.229197",
+          "city_completed": true
         },
         {
           "id": 10,
@@ -385,7 +386,7 @@
         }
       ],
       "created_at": "2026-05-17T05:31:29.226978",
-      "updated_at": "2026-05-17T08:59:59.262941",
+      "updated_at": "2026-05-17T09:59:23.351354",
       "share_token": "kU7f6iZN0KXT0zOjv4YwFqksCA6fftB50uMvFpnv_sc"
     },
     {
@@ -1057,12 +1058,33 @@
     },
     {
       "_id": "expenses",
-      "seq": 1
+      "seq": 2
     },
     {
       "_id": "activities",
       "seq": 14
+    },
+    {
+      "_id": "tripmembers",
+      "seq": 2
     }
   ],
-  "expenses": []
+  "expenses": [],
+  "settlements": [],
+  "tripmembers": [
+    {
+      "id": 1,
+      "trip_id": 3,
+      "name": "Rushikesh Patil",
+      "avatar": "RU",
+      "created_at": "2026-05-17T10:05:32.166659"
+    },
+    {
+      "trip_id": 1,
+      "name": "Test Buddy",
+      "avatar": "TB",
+      "id": 2,
+      "created_at": "2026-05-17T10:06:20.715109"
+    }
+  ]
 }
