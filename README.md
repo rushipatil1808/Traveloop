@@ -47,60 +47,87 @@
 
 ## 🛠️ Tech Stack
 
-| Layer | Technology |
-|-------|-----------|
-| Frontend | React.js |
-| Backend | Node.js / Express |
-| AI / LLM | Claude (Anthropic API) |
-| Database | MongoDB |
-| Styling | Tailwind CSS |
+| Layer | Technology | Description |
+|-------|------------|-------------|
+| **Frontend** | [Next.js 16](https://nextjs.org/) (React 19) | Modern app router framework, Turbopack, Tailwind CSS |
+| **Backend** | [FastAPI](https://fastapi.tiangolo.com/) (Python 3.12+) | High-performance, type-safe API backend with Uvicorn |
+| **AI / LLM** | [LangChain](https://www.langchain.com/) & Anthropic | Advanced AI agentic workflows & context-aware trip generation |
+| **Database** | [MongoDB](https://www.mongodb.com/) | Persistent document store for travel logs, stops, and budgets |
+| **Styling** | [Tailwind CSS v4](https://tailwindcss.com/) & Framer Motion | High-fidelity interactive UI with fluid micro-animations |
 
 ---
 
 ## 🚀 Getting Started
 
+This full-stack application consists of a Next.js client and a Python FastAPI server.
+
 ### Prerequisites
-- Node.js >= 18
-- npm or yarn
-- Anthropic API Key
+- Node.js >= 18 and npm
+- Python >= 3.12
+- MongoDB running locally (default: `mongodb://localhost:27017`)
+- Anthropic API Key (or other AI models supported in settings)
 
-### Installation
+### Running Locally
 
-```bash
-# Clone the repository
-git clone https://github.com/rushi1808/traveloop.git
-cd traveloop
+You can run both frontend and backend automatically using the start scripts in the root directory:
 
-# Install dependencies
-npm install
-
-# Set up environment variables
-cp .env.example .env
-# Add your ANTHROPIC_API_KEY and other config to .env
-
-# Run the development server
-npm run dev
+```powershell
+# Run the complete application (both services simultaneously)
+.\start.bat
 ```
 
-Open [http://localhost:3000](http://localhost:3000) in your browser.
+Or run them individually:
+
+#### 1. Backend Setup
+```bash
+cd backend
+# Create environment file and add your credentials
+cp .env.example .env
+# Start the backend server
+start_backend.bat
+```
+FastAPI Swagger documentation will be available at [http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs).
+
+#### 2. Frontend Setup
+```bash
+cd frontend
+# Create environment file and configure local port
+cp .env.local .env.local
+# Run Next.js in development mode
+npm run dev
+```
+The website will be available at [http://localhost:3000](http://localhost:3000).
 
 ---
 
 ## 📁 Project Structure
 
-```
+```text
 traveloop/
-├── client/          # React frontend
-│   ├── components/  # Reusable UI components
-│   ├── pages/       # Dashboard, Explore, MyTrips, AI Assistant
-│   └── styles/      # Tailwind config & global styles
-├── server/          # Express backend
-│   ├── routes/      # API routes
-│   ├── models/      # MongoDB models
-│   └── services/    # AI/Claude integration
-├── screenshots/     # App screenshots for README
-└── README.md
+├── frontend/             # Next.js 16 Web Application
+│   ├── app/              # App router (dashboard, chat, trips, budget)
+│   ├── components/       # Premium UI dashboard controls and timeline
+│   ├── lib/              # API wrapper client and helpers
+│   └── public/           # Static asset assets
+├── backend/              # FastAPI Python Web Service
+│   ├── app/              # API router, database layer, AI engine
+│   │   ├── api/          # Route handlers (auth, trips, weather, AI)
+│   │   ├── utils/        # Vector indexers, schema validations, logging
+│   │   └── config.py     # Environment configurations loaded via Pydantic
+│   ├── requirements.txt  # Python package specifications (LangChain, FAISS, etc.)
+│   └── verify.py         # Self-checking service verification script
+├── DEPLOYMENT.md         # Production-ready Cloud Deployment Guide
+└── README.md             # Project landing documentation
 ```
+
+---
+
+## ☁️ Production Deployment
+
+To deploy this project to the cloud, see our step-by-step **[Deployment Guide](file:///e:/Traveloop/DEPLOYMENT.md)**.
+- **Frontend** is highly optimized for deployment on **[Vercel](https://vercel.com)**.
+- **Backend** is designed to run on dedicated Python servers like **[Render](https://render.com)** or **[Railway](https://railway.app)**.
+- **Database** can be instantly hosted on the free tier of **[MongoDB Atlas](https://www.mongodb.com/cloud/atlas)**.
 
 ---
 
